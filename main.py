@@ -9,8 +9,8 @@ def draw_hist(_rseq, _title):
     plt.hist(_rseq)
     plt.show()
 
-rseq = generators.seq_multiplicative(1000,  2 ** 31 - 1, 0, 630360016)
-# rseq = generators.seq_wichmannhill(100)
+rseq = generators.seq_multiplicative(2000,  2 ** 31 - 1, 0, 630360016)
+# rseq = generators.seq_wichmannhill(1000)
 
 print('Random sequence', rseq)
 print('Period tests result is', tests.period_test(rseq, 34))

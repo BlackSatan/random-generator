@@ -12,7 +12,7 @@ def moment_test(rseq):
     t1 = math.sqrt(12 * len(rseq)) * abs(z1)
     t2 = ((len(rseq) - 1) / float(10 * len(rseq))) * float(abs(z2)) / math.sqrt(
         0.0056 * math.pow(len(rseq), -1) + 0.0028 * math.pow(len(rseq), -2) - 0.0083 * math.pow(len(rseq), -3))
-    return t1 <= 1.67 and t2 <= 1.67
+    return t1 >= 1.67 and t2 >= 1.67
 
 
 def period_test(rseq, n):
